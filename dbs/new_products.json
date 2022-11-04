@@ -1,0 +1,373 @@
+[{
+  "_id": {
+    "$oid": "635aa228cf379276ce966d5d"
+  },
+  "name": "ball",
+  "price": "250",
+  "category": "sport",
+  "photo": "2022-10-27_20-52-16-14.png",
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1666884136018"
+    }
+  },
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666884136010"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635aa27185e4e8cc17e86688"
+  },
+  "name": "ball",
+  "price": "250",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666884209660"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635aa3fb5ef4465cfedbb32c"
+  },
+  "name": "bat",
+  "price": "2250",
+  "category": "sport",
+  "photo": "2022-10-27_21-0-3-761.bmp",
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1666884603772"
+    }
+  },
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666884603739"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635aa41d5ef4465cfedbb32f"
+  },
+  "name": "bat",
+  "price": "2250",
+  "category": "sport",
+  "photo": "2022-10-27_21-0-3-761.bmp",
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1666884640405"
+    }
+  },
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666884637049"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b393f479616dace06fa73"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666922815657"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b393f479616dace06fa74"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666922815658"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b393f479616dace06fa75"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666922815658"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b393f479616dace06fa76"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666922815659"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b393f479616dace06fa77"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666922815659"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b393f479616dace06fa78"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666922815659"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b393f479616dace06fa79"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666922815659"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b393f479616dace06fa7a"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666922815659"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b393f479616dace06fa7b"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666922815660"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b393f479616dace06fa7c"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666922815660"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b3a8bfb5254f280d59d08"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666923147891"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b3a8bfb5254f280d59d09"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666923147892"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b3a8bfb5254f280d59d0a"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666923147892"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b3a8bfb5254f280d59d0b"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666923147893"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b3a8bfb5254f280d59d0c"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666923147893"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b3a8bfb5254f280d59d0d"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666923147893"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b3a8bfb5254f280d59d0e"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666923147893"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b3a8bfb5254f280d59d0f"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666923147893"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b3a8bfb5254f280d59d10"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666923147894"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635b3a8bfb5254f280d59d11"
+  },
+  "name": "Football",
+  "price": "3000",
+  "category": "sport",
+  "photo": null,
+  "updated_at": null,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1666923147894"
+    }
+  },
+  "__v": 0
+}]

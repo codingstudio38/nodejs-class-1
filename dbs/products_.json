@@ -1,0 +1,63 @@
+[{
+  "_id": {
+    "$oid": "63549f18b562db49bda79c14"
+  },
+  "name": "ball",
+  "price": 1100,
+  "color": "red",
+  "category": "play"
+},{
+  "_id": {
+    "$oid": "63549f20b562db49bda79c15"
+  },
+  "name": "bat",
+  "price": 250,
+  "color": "red",
+  "category": "play"
+},{
+  "_id": {
+    "$oid": "63549f2cb562db49bda79c16"
+  },
+  "name": "football",
+  "price": 800,
+  "color": "red",
+  "category": "play"
+},{
+  "_id": {
+    "$oid": "63549f4706b4ccaf1558b4f6"
+  },
+  "name": "hockey",
+  "price": 3000,
+  "color": "red",
+  "category": "play"
+},{
+  "_id": {
+    "$oid": "6354a79eb562db49bda79c17"
+  },
+  "name": "ludoo",
+  "price": 250,
+  "color": "red",
+  "category": "play"
+},{
+  "_id": {
+    "$oid": "635642a666638b3fcec68894"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635643016322aab32c80d1dc"
+  },
+  "name": "wickets 5",
+  "price": 1200,
+  "color": "black",
+  "category": "play",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6359d9f2db51b732a6725d81"
+  },
+  "name": "wickets 4",
+  "price": 1200,
+  "color": "black",
+  "category": "play"
+}]

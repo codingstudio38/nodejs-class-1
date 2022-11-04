@@ -1,0 +1,82 @@
+test> show dbs
+admin       40.00 KiB
+config      60.00 KiB
+node_class   8.00 KiB
+test> db.createCollection("cmddb_");
+{ ok: 1 }
+
+test> show dbs
+admin        40.00 KiB
+config      108.00 KiB
+node_class    8.00 KiB
+test          8.00 KiB
+
+db> use node_class
+switched to db node_class
+
+node_class> db.createCollection("cmddb_");
+{ ok: 1 }
+
+
+
+///show all tables list
+node_class> show collections
+cmddb_
+test_
+
+///table drop
+node_class> db.test_.drop()
+true
+
+
+///database drop
+node_class> db.dropDatabase()
+
+
+///insert one
+node_class> db.cmddb_.insertOne({"id":1,"name":"bidyut"})
+{
+  acknowledged: true,
+  insertedId: ObjectId("6353521047267f77cf155142")
+}
+
+
+///show all
+node_class> db.cmddb_.find()
+[
+  { _id: ObjectId("6353521047267f77cf155142"), id: 1, name: 'bidyut' }
+]
+
+///show all
+node_class> db.cmddb_.find().pretty()
+[
+  { _id: ObjectId("6353521047267f77cf155142"), id: 1, name: 'bidyut' }
+]
+
+///update 
+db.cmddb_.updateOne({ id: 3 },
+{
+  $set: {
+    name: "vidyut3"
+  }
+})
+
+///deleteOne
+db.cmddb_.deleteOne({ id: 1 })
+
+
+
+//////////////////////////////many///////////
+
+db.cmddb_.updateMany(
+  { security_deposit: { $id: 2 } },
+  {
+    $set: { created_at: Date.now(),updated_at: Date.now()}
+  }
+)
+db.cmddb_.updateMany({security_deposit:{$id:2}},{$set:{created_at:Date.now(),updated_at:Date.now()}})
+
+
+
+
+
