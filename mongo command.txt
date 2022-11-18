@@ -18,18 +18,15 @@ node_class> db.createCollection("cmddb_");
 { ok: 1 }
 
 
-
-///show all tables list
 node_class> show collections
 cmddb_
 test_
 
-///table drop
+
 node_class> db.test_.drop()
 true
 
 
-///database drop
 node_class> db.dropDatabase()
 
 
@@ -79,4 +76,57 @@ db.cmddb_.updateMany({security_deposit:{$id:2}},{$set:{created_at:Date.now(),upd
 
 
 
+-----------------------------------------15-11-2022-------------------------------------------
 
+
+
+test> show dbs
+React_API              144.00 KiB
+admin                   40.00 KiB
+config                  72.00 KiB
+local                   72.00 KiB
+mongo_crud_operations  144.00 KiB
+node_class             216.00 KiB
+
+
+test> use Mongo_Class
+switched to db Mongo_Class
+
+Mongo_Class> db.createCollection('classs');
+{ ok: 1 }
+
+Mongo_Class> db.classs.drop()
+true
+
+Mongo_Class> db.dropDatabase()
+
+Mongo_Class> show collections
+classs
+
+Mongo_Class> db.users.find()
+
+Mongo_Class> db.classs.insertOne({name:"vidyut",email:"vidyut.start006@gmail.com",phone:1234567890,active:true});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6373b90edc4917666016a97f")
+}
+
+Mongo_Class> db.classs.find().pretty()
+
+Mongo_Class> db.classs.find({name:"vidyut"}).pretty()
+
+Mongo_Class> db.classs.find({name:"vidyut"},{_id:0,name:1,email:1}).pretty()
+
+Mongo_Class> db.classs.find().pretty().limit(1)
+
+Mongo_Class> db.classs.findOne().pretty()
+
+Mongo_Class> db.classs.find().pretty().limit(1).skip(1)
+
+Mongo_Class> db.classs.updateOne({phone:1234567890},{$set:{active:false}})
+
+Mongo_Class> db.classs.updateMany({phone:1234567890},{$set:{active:false}})
+
+Mongo_Class> db.classs.deleteOne({name:"Ridyut"})
+
+Mongo_Class> db.classs.deleteMany({active:true})

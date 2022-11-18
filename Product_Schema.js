@@ -6,4 +6,4 @@ const ProductSchema = new mongooseConnect.Schema({
     category: String,
 });
 const ProductModel = mongooseConnect.model('products_', ProductSchema);
-module.exports = { ProductModel };
+module.exports = { ProductModel }; 
