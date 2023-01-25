@@ -16,7 +16,7 @@ app.get('/', async (req, resp) => {
         }
     });
 
-})
+})  
 app.post('/', async (req, resp) => {
     let data = req.body;
     let query_ = "INSERT INTO `products_` set ?";
