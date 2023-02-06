@@ -4,6 +4,8 @@ const ProductSchema = new mongooseConnect.Schema({
     price: Number,
     color: String,
     category: String,
+}, {
+    timestamps: true,
 });
 const ProductModel = mongooseConnect.model('products_', ProductSchema);
 module.exports = { ProductModel }; 

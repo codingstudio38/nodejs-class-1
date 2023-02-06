@@ -25,9 +25,69 @@ app.get('/list/', async (req, resp) => {
     let data = await ProductModel.find();
     resp.send(data);
 })
+function modifyDate(date) {
+    let dateis, H, M, S, MS, D, MO, Y, TIME, DATE_, stringdate, utcstring, fulldatetime;
+    dateis = new Date(date);
+    D = dateis.getDate();
+    if (D <= 9) {
+        D = "0" + D;
+    } else {
+        D = D;
+    }
+    MO = dateis.getMonth();
+    if (MO <= 9) {
+        MO = "0" + MO;
+    } else {
+        MO = MO;
+    }
+    Y = dateis.getFullYear();
+
+    H = dateis.getHours();
+    if (H <= 9) {
+        H = "0" + H;
+    } else {
+        H = H;
+    }
+    M = dateis.getMinutes();
+    if (M <= 9) {
+        M = "0" + M;
+    } else {
+        M = M;
+    }
+    S = dateis.getSeconds();
+    if (S <= 9) {
+        S = "0" + S;
+    } else {
+        S = S;
+    }
+    MS = dateis.getMilliseconds();
+    if (MS <= 9) {
+        MS = "0" + MS;
+    } else {
+        MS = MS;
+    }
+    DATE_ = `${Y}:${MO}:${D}`;
+    TIME = `${H}:${M}:${S}:${MS}`;
+    stringdate = `${dateis.toDateString()} ${TIME}`;
+    utcstring = dateis.toUTCString();
+    fulldatetime = `${DATE_} ${TIME}`;
+    return {
+        'stringdate': stringdate,
+        'utcstring': utcstring,
+        'fulldatetime': fulldatetime
+    };
+}
 app.get('/list/:id', async (req, resp) => {
-    let data = await ProductModel.findOne({ _id: new mongodb.ObjectId(req.params.id) });
-    resp.send(data);
+    let startdate, enddate, data, start;
+    data = await ProductModel.findOne({ _id: new mongodb.ObjectId(req.params.id) });
+    enddate = modifyDate(data.updatedAt);
+    startdate = modifyDate(data.createdAt);
+    //let starttimeis = `${start.getHours()}:${start.getMinutes()}:${start.getSeconds()}:${start.getMilliseconds()}`;
+    //startdate = `${start.toDateString()} ${starttimeis}`;
+    //startdate = `${start.getFullYear()}-${start.getMonth()}-${start.getDate()} ${starttimeis}`;
+    //date.toDateString() // "Thu Dec 29 2011"
+    //date.toUTCString()  // "Fri, 30 Dec 2011 02:14:56 GMT"
+    resp.send({ data, dateis: { 'startdate': startdate, 'enddate': enddate } });
 })
 
 app.post('/create/', async (req, resp) => {
@@ -40,6 +100,7 @@ app.put('/update/:id', async (req, resp) => {
     let data = await ProductModel.updateOne({ _id: new mongodb.ObjectId(req.params.id) }, { $set: req.body });
     resp.send(data);
 })
+
 app.delete('/delete/:id', async (req, resp) => {
     let data = await ProductModel.deleteOne({ _id: new mongodb.ObjectId(req.params.id) });
     resp.send(data);
