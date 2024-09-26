@@ -1,6 +1,7 @@
 let a = 10;
 let b = 0;
 let condition = true;
+
 console.log("start exe...");
 const waitdata = async () => {
     return new Promise((resolve, reject) => {
